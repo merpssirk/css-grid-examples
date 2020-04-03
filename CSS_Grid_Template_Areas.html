@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Areas</title>
+    <style>
+        .item{
+            padding: 3rem;
+            background-color: #eee;
+            border:1px solid #bbb;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+            'header header header header'
+            'content content content sidebar'
+            'box1 box2 box3 box4'            
+            'footer footer footer footer';
+            grid-gap:1rem;
+        }
+        .header,
+        .content,
+        .sidebar,
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        footer{
+            border:1px solid #ccc;
+            padding: 0.5rem;
+            text-align:center;
+        }
+        .header{
+            grid-area:header;
+        }
+        .content{
+            grid-area:content;
+        }
+        .sidebar{
+            grid-area:sidebar;
+        }
+        .box1{
+            grid-area:box1;
+        }
+        .box2{
+            grid-area:box2;
+        }
+        .box3{
+            grid-area:box3;
+        }
+        .box4{
+            grid-area:box4;
+        }
+        .footer{
+            grid-area:footer;
+        }
+         
+         
+         
+         
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1> My Website </h1>
+        </header>
+        <section class="content">
+            <h3> Welcome to My Website</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reprehenderit temporibus aspernatur a dolores officiis laudantium laborum, nisi, pariatur sed excepturi. Vel aut magnam autem sequi maxime quo fugit eligendi.
+            </p>
+        </section>
+        <aside class="sidebar">
+            <h3> Contact Us</h3>
+            <ul>
+                <li>Compamy Name</li>
+                <li>Address</li>
+                <li>Email </li>
+                <li>phone number</li>
+            </ul>
+
+        </aside>
+        <div class="box1">
+            <h3> Heading </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda fugit incidunt doloribus totam id nobis minus at eius iste? Voluptatibus excepturi nulla adipisci nemo molestiae.</p>
+        </div>
+        <div class="box2">
+            <h3> Heading </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda fugit incidunt doloribus totam id nobis minus at eius iste? Voluptatibus excepturi nulla adipisci nemo molestiae.</p>
+        </div>
+        <div class="box3">
+            <h3> Heading </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda fugit incidunt doloribus totam id nobis minus at eius iste? Voluptatibus excepturi nulla adipisci nemo molestiae.</p>
+        </div>
+        <div class="box4">
+            <h3> Heading </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda fugit incidunt doloribus totam id nobis minus at eius iste? Voluptatibus excepturi nulla adipisci nemo molestiae.</p>
+        </div>
+        <footer class="footer">
+            <p> Copyright &copy; 2020</p>
+        </footer>
+
+    </div>
+     
+   
+</body>
+</html>
